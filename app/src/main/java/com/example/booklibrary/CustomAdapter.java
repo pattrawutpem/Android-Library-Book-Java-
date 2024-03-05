@@ -75,8 +75,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyviewHold
             book_author_txt = itemView.findViewById(R.id.book_author_txt);
             book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
-            Animation translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
-            mainLayout.setAnimation(translate_anim);
+            animation = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
+            mainLayout.setAnimation(animation);
         }
     }
 }
