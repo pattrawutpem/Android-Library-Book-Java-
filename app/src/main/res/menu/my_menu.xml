@@ -6,6 +6,6 @@
         android:id="@+id/delete_all"
         android:title="Delete All"
         android:icon="@drawable/baseline_delete_24"
-        app:showAsAction="never"/>
+        app:showAsAction="always"/>
 
 </menu>
