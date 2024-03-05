@@ -97,9 +97,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show();
             MyDatabaseHelper myDB = new MyDatabaseHelper(this);
             myDB.deleAll();
-            Intent intent = new Intent(MainActivity.this, AddActivity.class);
-            startActivity(intent);
-            finish();
+            recreate();
         }
         return super.onOptionsItemSelected(item);
     }
