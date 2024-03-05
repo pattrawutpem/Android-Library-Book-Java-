@@ -36,6 +36,7 @@ public class UpdateActivity extends AppCompatActivity {
             public void onClick(View v) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
                 myDB.updateBook(id, title_input.getText().toString(), author_input.getText().toString(), pages_input.getText().toString());
+                finish();
             }
         });
         delete_btn.setOnClickListener(new View.OnClickListener() {
