@@ -27,6 +27,8 @@ public class AddActivity extends AppCompatActivity {
                 myDB.addBook(title_input.getText().toString()
                         , author_input.getText().toString()
                         , Integer.valueOf(pages_input.getText().toString().trim()));
+                Intent intent = new Intent(AddActivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
